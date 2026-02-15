@@ -10,6 +10,7 @@
     width: 100%;
     align-items: center;
     position: fixed;
+
 }
 #checkbox{
     display: none;
@@ -18,14 +19,14 @@
     position: relative;
 }
 .content{
-    background-color: rgba(54, 7, 7, 0.212);
-    width: 200px;
+    background-color: white;
+    width: 500px;
     height: 800px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-    position: absolute;
-    top: 50px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+    position: fixed;
+    top: 0;
     left: 0;
-    transform: translateX(-100%);
+    transform: translateX(-110%);
     transition: transform 0.3s ease-in-out;
     flex-direction: column;
     padding-top: 30px;
@@ -34,11 +35,15 @@
 .content p{
     font-size: 2em;
 }
+.content a{
+    text-decoration: none;
+    color: inherit;
+}
 #checkbox:checked+.content{
     transform: translate(0);
 }
-p:hover{
-    background-color: white;
+.content p:hover{
+    background-color: #dcd6f7;
     color: black;
 }
 
@@ -54,12 +59,17 @@ p:hover{
     width: 100%;
     height: auto;
 }
+.fooditem img{
+    box-shadow: 0 0 6px #b4ada4,
+                0 0 12px #b4ada4;
+    transition: 0.3s ease;
+}
 
 .aboutsection{
     display: flex;
     flex-direction: column;
     text-align: center;
-    padding: 60px 20px;
+    padding: 80px 20px;
 }
 .name{
     margin-bottom: 30px;
