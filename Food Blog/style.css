@@ -129,3 +129,55 @@ img,h1,p{
 .tags .active{
     background: black;
 }
+
+@media (max-width: 768px) {
+
+    .header {
+        padding: 10px 15px;
+    }
+
+    .header h1 {
+        font-size: 18px;
+    }
+
+    .content {
+        width: 180px;
+        height: 100vh;
+    }
+
+    .content p {
+        font-size: 1.2em;
+    }
+
+    .mid {
+        grid-template-columns: 1fr;
+        gap: 25px;
+        padding: 100px 15px 30px;
+    }
+
+    .fooditem h2 {
+        font-size: 18px;
+    }
+
+    .image img {
+        width: 220px;
+    }
+
+    .image2 {
+        padding: 0 20px;
+        font-size: 14px;
+    }
+
+    .footer {
+        flex-direction: column;
+        padding: 30px 20px;
+    }
+
+    .footer3 {
+        padding-left: 0;
+    }
+
+    .span1 {
+        font-size: 18px;
+    }
+}
